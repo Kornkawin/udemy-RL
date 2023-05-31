@@ -9,7 +9,7 @@ class BanditArm:
         self.estimated_m = 0
 
     def pull(self):
-        # IN Normal Distribution N(m, 1)
+        # IN Normal Distribution x~N(m, 1)
         return np.random.randn() + self.m
 
     def update(self, reward):

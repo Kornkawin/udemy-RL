@@ -17,9 +17,10 @@ class BanditArm:
 
     def pull(self):
         # IN Bernoulli Distribution
-        # reward is {0, 1}
+        # reward x is {0, 1}
         # with 1 being a win
         # and 0 being a loss
+        # x~Bernoulli(TRUE_WIN_RATE)
         return np.random.random() < self.win_rate
 
     def update(self, reward):
