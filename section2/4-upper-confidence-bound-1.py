@@ -4,6 +4,7 @@ import matplotlib.pyplot as plt
 NUM_TRIALS = 100000
 BANDIT_PROBABILITIES = [0.2, 0.5, 0.75]
 
+
 class BanditArm:
     def __init__(self, p):
         # p is win rate
